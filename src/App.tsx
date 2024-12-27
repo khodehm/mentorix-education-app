@@ -4,14 +4,16 @@ import MainLayout from "./components/layout/mainLayout";
 import Home from "./pages/home";
 import About from "./pages/aboutUs";
 import Features from "./pages/features";
+import { Suspense } from "react";
+import { DotLoader } from "./components/loading";
 function App() {
   const routes = createBrowserRouter([
     {
       path: "/",
       element: (
-        <>
+        <Suspense fallback={<><DotLoader/></>}>
           <MainLayout />
-        </>
+        </Suspense>
       ),
       children: [
        
