@@ -1,10 +1,6 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App'
-import "./assets/styles/index.scss";
+import './index.scss'; 
 import 'swiper/swiper-bundle.css';
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+
+createRoot(document.getElementById('root')!).render(<App />)
