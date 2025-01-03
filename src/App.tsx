@@ -8,6 +8,7 @@ import { DotLoader } from "./components/loading";
 import College from "./pages/college";
 import CourseDetails from "./components/courseDetail";
 import SwiperLayout from "./components/layout/swiperLayout";
+import Courses from "./pages/courses";
 function App() {
   const routes = createBrowserRouter([
     {
@@ -24,9 +25,11 @@ function App() {
             {path : "home" , element: <Home/>},
             { path: "about", element: (<><About /></>),},
             {path: "features", element: (<><Features /></>),},
+            {path: "college", element: (<><College /></>),},
+
           ],
         },
-        {path: "college", element: (<><College /></>),},
+        {path: "courses", element: (<><Courses /></>),},
         {path:"course/:title" , element:<><CourseDetails/></>},
       ]
     },

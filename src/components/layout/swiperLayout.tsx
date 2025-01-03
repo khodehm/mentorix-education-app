@@ -4,7 +4,7 @@ import useActiveRoute from "../../hooks/useActiveRoute";
 import { Mousewheel, EffectFade } from "swiper/modules";
 const SwiperLayout = () =>{
   const navigation = useNavigate();
-  const routes = ["home", "about", "features", "college"];
+  const routes = ["home", "about", "college" , "features",];
    const { handleChange ,activeIndex } = useActiveRoute(navigation, routes);
     return(
 
