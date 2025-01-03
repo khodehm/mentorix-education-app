@@ -23,15 +23,17 @@ const NavBar = () => {
       icon: <IoIosInformationCircle className="text-black" />,
       path: "/about",
       options: "",
-    }, {
-      name: "محصولات",
-      icon: <AiFillProduct className="text-black" />,
-      path: "/features",
-      options: "",
-    }, {
+    },
+    {
       name: "کالج",
       icon:  <FaUserGraduate className="" />,
       path: "/college",
+      options: "",
+    },
+    {
+      name: "محصولات",
+      icon: <AiFillProduct className="text-black" />,
+      path: "/features",
       options: "",
     },
    
