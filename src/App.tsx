@@ -7,26 +7,30 @@ import { Suspense } from "react";
 import { DotLoader } from "./components/loading";
 import College from "./pages/college";
 import CourseDetails from "./components/courseDetail";
+import SwiperLayout from "./components/layout/swiperLayout";
 function App() {
   const routes = createBrowserRouter([
     {
-      path: "/",
+      path: "",
       element: (
         <Suspense fallback={<><DotLoader/></>}>
           <MainLayout />
         </Suspense>
-      ),
-      children: [
-        {path: "/", element:<Navigate to="home"/>},
-        {path : "home" , element: <Home/>},
-        { path: "about", element: (<><About /></>),},
-        {path: "features", element: (<><Features /></>),},
+      ),      
+      children:[
+        {path:"/", element:<><SwiperLayout/></>,
+          children: [
+            {path: "/", element:<Navigate to="home"/>},
+            {path : "home" , element: <Home/>},
+            { path: "about", element: (<><About /></>),},
+            {path: "features", element: (<><Features /></>),},
+          ],
+        },
         {path: "college", element: (<><College /></>),},
-      ],
+        {path:"course/:title" , element:<><CourseDetails/></>},
+      ]
     },
-    {path:"course/:title" , element:<><CourseDetails/></>},
-    {path: "*",element: (<><h2>Page not found</h2></>),},
-
+    {path: "*",element: (<><h2>Page not found</h2></>),},    
   ]);
   return (
     <>

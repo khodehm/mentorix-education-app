@@ -13,9 +13,9 @@ interface ICardProps{
 export const Card = ({title = "تیتر", src = "aksnfdas" , hasBtn = false , dsc = "توضیحات"  , className = '', btnText = '', btnBg = '#000', onClick}:ICardProps) => {
   return (
       <div className={`card h-[300px] ${className}`} onClick={onClick}>
-        <div className="img" style={{backgroundImage:`url(${src})` ,backgroundPosition:"center" , backgroundRepeat:"repeat" , backgroundAttachment:"fixed" , backgroundSize:"75%"}}>
+        <div className="img" style={{backgroundImage:`url(${src})` ,backgroundPosition:"center" , backgroundRepeat:"repeat" , backgroundSize:"100%"}}>
           <div className="save">
-            <svg className="svg" width={683} height={683} viewBox="0 0 683 683" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="svg" width={100} height={100} viewBox="0 0 683 683" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clipPath="url(#clip0_993_25)">
                 <mask id="mask0_993_25" style={{maskType: 'luminance'}} maskUnits="userSpaceOnUse" x={0} y={0} width={683} height={683}>
                   <path d="M0 -0.00012207H682.667V682.667H0V-0.00012207Z" fill="white" />
@@ -32,9 +32,9 @@ export const Card = ({title = "تیتر", src = "aksnfdas" , hasBtn = false , ds
             </svg>
           </div>
         </div>
-        <div className="text">
+        <div className="text text-pretty ">
           <p className="h3"> {title} </p>
-          <p className="p"> {dsc} </p>
+          <p className=""> {dsc} </p>
         </div>
        {hasBtn && <div><button style={{background:btnBg}}>{btnText}</button></div>}
       </div>
