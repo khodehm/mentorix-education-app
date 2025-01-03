@@ -39,13 +39,11 @@ const Events = () => {
     >
       <SwiperSlide>
         <>
-          {events.map((e: any, i: number) => {
+          {events.map((e: any) => {
             return (
               <Card
-                id={i}
                 title={e.title}
                 dsc={e.description}
-                color={"#ebebeb"}
                 src={pic}
                 hasBtn={true}
                 btnBg={"#00b4d8"}

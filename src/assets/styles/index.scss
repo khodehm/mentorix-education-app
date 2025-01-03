@@ -1,4 +1,4 @@
-@use "../styles/base/fonts.scss" as *;
+@use "../styles/base/shared.scss" as *;
 @tailwind base;
 @tailwind variants;
 @tailwind components;
@@ -8,7 +8,17 @@ body ,html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
   scroll-behavior: smooth;
-  font-family: Vazir;
+  font-family: 'vazir-th';
+  // font-family: Vazir;
   background-color: #fff;
+}
+
+.swiper-slide-active{
+  opacity: 1;
+  height: 100% !important;
+}
+.swiper-slide-prev{
+  opacity: 0;
 }

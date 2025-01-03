@@ -23,19 +23,17 @@ const Features = () => {
    ]
     return (
         <>
-        <motion.article initial={{opacity:0}} animate={{opacity:1 , animation:"ease-in-out"}} className="relative  m-4 text-center md:h-[90%]">
-        <p className="font-bold text-3xl sm:text-2xl my-4">محصولات</p>
+        <motion.article initial={{opacity:0}} animate={{opacity:1 , animation:"ease-in-out"}} className="relative h-[90%] m-4 py-10 text-center ">
+        <p className="font-bold text-3xl sm:text-2xl pt-2 my-4">محصولات</p>
         {/* <motion.section initial={{rotate:"100deg" , animation: "ease" }}  className="absolute right-[-30rem] top-[15rem] w-[40%] h-[40%] z-10"> <motion.img src={pic}></motion.img></motion.section> */}
-        <section className="relative z-auto w-full h-full p-4 flex flex-col justify-center items-center  bg-bg2 rounded-lg  xsm:mb-4 ">
-         <Swiper modules={[ Pagination]} pagination={true} className=" md:h-full xsm:h-full overflow-auto w-full" >
-            {fileds.map((e:any, i:number) => {
-                return(
-                    <>
-                        <SwiperSlide className="flex flex-col md:flex-row justify-center items-center  p-4 " key={i} style={{display:"flex"}}>
-                            <div className="xsm:w-full md:w-[20%] flex gap-4 "> <img className="w-full" src={e.image} alt="feature"/></div>
-                            <p className="font-normal my-8 text-lg">{e.title}</p>
-                        </SwiperSlide>   
-                    </>
+        <section className="relative z-auto flex flex-col justify-center items-center h-full w-full   bg-bg2 rounded-lg  mb-4 ">
+         <Swiper modules={[ Pagination]} pagination={true} className=" md:h-full  h-full overflow-auto  w-full" >
+            {fileds.map((e:any) => {
+                return(                     
+                    <SwiperSlide className="flex flex-col md:flex-row justify-center items-center  p-4 " key={e.title} style={{display:"flex"}}>
+                        <div className="w-full flex gap-4 justify-center "> <img className="sm:w-[50%] xl:w-[30%]" src={e.image} alt="feature"/></div>
+                        <p className="font-normal my-8 text-lg">{e.title}</p>
+                    </SwiperSlide>                  
                 )
             })}
          </Swiper>
