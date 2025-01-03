@@ -1,7 +1,6 @@
 import { createRoot } from 'react-dom/client'
 import App from './App'
-import "./assets/styles/index.scss";
+import './index.scss'; 
 import 'swiper/swiper-bundle.css';
-createRoot(document.getElementById('root')!).render(
-    <App />
-)
+
+createRoot(document.getElementById('root')!).render(<App />)

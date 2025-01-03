@@ -1,4 +1,3 @@
-import "./assets/styles/index.scss";
 import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 import MainLayout from "./components/layout/mainLayout";
 import Home from "./pages/home";
@@ -7,6 +6,7 @@ import Features from "./pages/features";
 import { Suspense } from "react";
 import { DotLoader } from "./components/loading";
 import College from "./pages/college";
+import CourseDetails from "./components/courseDetail";
 function App() {
   const routes = createBrowserRouter([
     {
@@ -21,21 +21,16 @@ function App() {
         {path : "home" , element: <Home/>},
         { path: "about", element: (<><About /></>),},
         {path: "features", element: (<><Features /></>),},
-        {path: "college", element: (<><College /></>),
-          children:[
-            {path:"courses/:title" }
-          ]
-        },
-
-        {path: "*",element: (<><h2>Page not found</h2></>),},
+        {path: "college", element: (<><College /></>),},
       ],
     },
+    {path:"course/:title" , element:<><CourseDetails/></>},
+    {path: "*",element: (<><h2>Page not found</h2></>),},
+
   ]);
   return (
     <>
-      <Suspense fallback={<><DotLoader/></>}>
         <RouterProvider router={routes} />
-      </Suspense>
     </>
   );
 }

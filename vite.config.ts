@@ -6,9 +6,8 @@ export default defineConfig({
   css:{
     preprocessorOptions:{
       scss:{
-        additionalData:`@use "/src/assets/styles/base/shared.scss";`
+        additionalData: `@use "/src/assets/styles/base/shared.scss";`,
       }
-    }
-  }
-  
+    },
+  },
 })

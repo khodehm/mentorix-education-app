@@ -8,9 +8,8 @@ export default {
         "vazir-md" : ["vazir-md","sanserif"],
         "vazir-th" : ["vazir-th","sanserif"],
         "vazir-rg" : ["vazir-rg","sanserif"],
-        "vazir-blod" : ["vazir-bold","sanserif"],
+        "vazir-bold" : ["vazir-bold","sanserif"],
         "vazir-smb" : ["vazir-smb","sanserif"],
-
       },
 
       colors:{

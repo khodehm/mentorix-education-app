@@ -1,4 +1,3 @@
-@use "../styles/base/shared.scss" as *;
 @tailwind base;
 @tailwind variants;
 @tailwind components;
@@ -10,8 +9,8 @@ body ,html {
   box-sizing: border-box;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  font-family: 'vazir-th';
-  // font-family: Vazir;
+  // font-family: vazir-rg, sans-serif;
+  font-family: Vazir;
   background-color: #fff;
 }
 

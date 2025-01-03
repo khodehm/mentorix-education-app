@@ -7,27 +7,12 @@ interface ICardProps{
     btnText ? : any;
     btnBg ? : any;
     className ?  : any
-
+    onClick ?: any
 }
 
-// export const Card = ({title = "تیتر", src = "aksnfdas" , hasBtn = false , dsc = "توضیحات"  , className = '', btnText = '', btnBg = '#000'}:ICardProps)=>{
-// }
-// return(
-//     <>
-//         <section className={` flex flex-col  p-4 rounded-xl bg-bg2 w-full ${className}`}>
-//             <section className={`flex flex-col sm:flex-wrap items-start `}>
-//                 { src && <div className=" flex justify-center w-full "><img className="rounded-xl flex w-[50%]" src={src} alt={`image of ${title}`}/></div> }
-//                 <div className=""><p className="font-bold text-xl">{title}</p></div>
-//                 <div className="p-1">{dsc}</div>
-//             </section>
-//             {hasBtn && <button style={btnBg}>{btnText}</button>}
-//         </section>
-
-//     </>
-// )
-export const Card = ({title = "تیتر", src = "aksnfdas" , hasBtn = false , dsc = "توضیحات"  , className = '', btnText = '', btnBg = '#000'}:ICardProps) => {
+export const Card = ({title = "تیتر", src = "aksnfdas" , hasBtn = false , dsc = "توضیحات"  , className = '', btnText = '', btnBg = '#000', onClick}:ICardProps) => {
   return (
-      <div className={`card h-[300px] ${className}`}>
+      <div className={`card h-[300px] ${className}`} onClick={onClick}>
         <div className="img" style={{backgroundImage:`url(${src})` ,backgroundPosition:"center" , backgroundRepeat:"repeat" , backgroundAttachment:"fixed" , backgroundSize:"75%"}}>
           <div className="save">
             <svg className="svg" width={683} height={683} viewBox="0 0 683 683" fill="none" xmlns="http://www.w3.org/2000/svg">
