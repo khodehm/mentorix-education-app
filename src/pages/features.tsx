@@ -23,10 +23,10 @@ const Features = () => {
    ]
     return (
         <>
-        <motion.article initial={{opacity:0}} animate={{opacity:1 , animation:"ease-in-out"}} className="relative h-[90%] m-4 py-10 text-center ">
-        <p className="font-bold text-3xl sm:text-2xl pt-2 my-4">محصولات</p>
+        <motion.article initial={{opacity:0}} animate={{opacity:1 , animation:"ease-in-out"}} className="relative h-[90%] p-4  py-4 text-center ">
+        <p className="font-bold text-3xl sm:text-2xl my-4 ">محصولات</p>
         {/* <motion.section initial={{rotate:"100deg" , animation: "ease" }}  className="absolute right-[-30rem] top-[15rem] w-[40%] h-[40%] z-10"> <motion.img src={pic}></motion.img></motion.section> */}
-        <section className="relative z-auto flex flex-col justify-center items-center h-full w-full   bg-bg2 rounded-lg  mb-4 ">
+        <section className="relative z-auto flex flex-col   bg-bg2 rounded-lg  mb-4 ">
          <Swiper modules={[ Pagination]} pagination={true} className=" md:h-full  h-full overflow-auto  w-full" >
             {fileds.map((e:any) => {
                 return(                     
