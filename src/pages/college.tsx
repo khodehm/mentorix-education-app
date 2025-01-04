@@ -14,7 +14,7 @@ const College = () => {
         <>
         <section className="relative flex text-center px-4  flex-col h-screen py-10">
             <motion.section  initial={{ opacity: 0, x: -420 , rotate: 0 }}
-              animate={{opacity: 1,x: -420,rotate: isActive ? 50 : 0,}} transition={{ duration: 1 }} className="absolute left-0 z-10 sm:top-10 sm:w-[800px] xl:w-[1000px] ">
+              animate={{opacity: 1,x: -420,rotate: isActive ? 50 : 0,}} transition={{ duration: 1 }} className="absolute left-0 z-10 opacity-0 sm:top-10 sm:w-[800px] xl:w-[1000px] ">
               <motion.img src={pic} className={isActive ? "flex" : "hidden"}/>
             </motion.section>
             <p className="font-bold text-3xl sm:text-2xl">کالج منتوریکس</p>
