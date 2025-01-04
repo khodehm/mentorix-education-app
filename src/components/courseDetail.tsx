@@ -22,7 +22,7 @@ const CourseDetails = () => {
         <div className="flex flex-col items-start text-balance">
             <p className="text-2xl font-bold ">{course.title}</p>
             <p className="text-lg">{course.description}</p>
-            <div className=" relative bottom-10 w-full"><button className={`flex justify-center p-3 rounded-xl w-full text-lg font-bold text-white `} style={{background:course.btn}}>برو بریم !</button></div>
+            <div className=" relative bottom-1 w-full"><button className={`flex justify-center p-3 rounded-xl w-full text-lg font-bold text-white `} style={{background:course.btn}}>برو بریم !</button></div>
         </div>
         </section>
       </motion.section>
