@@ -10,7 +10,7 @@ const About = () => {
     
     return (
         <>
-        <section className="relative flex text-center px-4 my-8 flex-col h-full ">
+        <section className="relative flex text-center px-4 my-8  flex-col h-full ">
         <motion.section  initial={{ opacity: 0, x: 420 , rotate: 0 }}
           animate={{opacity: 1,x: 420,rotate: isActive ? 50 : 0,}} transition={{ duration: 1 }} className="absolute right-0 z-10 sm:top-10 sm:w-[800px] xl:w-[1000px] ">
           <motion.img src={pic} className={isActive ? "flex" : "hidden"}/>
