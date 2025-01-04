@@ -1,0 +1,10 @@
+@use "../base/variable.scss" as *;
+
+.swiper-pagination-bullet-active {
+    background-color: $indigo-500 !important;
+}
+.swiper-pagination-bullet{
+    width: 10% !important;
+    height: 10px !important;
+    border-radius: 15px !important;
+}
