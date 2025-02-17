@@ -26,7 +26,7 @@ const Home = () => {
     <div className="hero-section flex flex-col  justify-center text-center overflow-hidden    h-full bg-white">
       <div className="  gap-2 flex flex-col justify-center items-center ">
         <img src={logo} alt="" className=" w-[5rem] rounded-full"/>
-        <p className="font-bold text-3xl text-2xl">گروه نرم افزاری منتوریکس</p>
+        <p className="font-bold sm:text-3xl text-2xl">گروه نرم افزاری منتوریکس</p>
         <p className="text-lg"> سامانه آموزش و کالج منتوریکس</p>
       </div>
 
@@ -57,7 +57,7 @@ const Home = () => {
         <motion.img
           src={coffee}
           alt="Image 2"
-          className="absolute xsm:w-[15rem] xsm:bottom-[-15rem] 2xl:bottom-[-30rem] xl:bottom-[-15rem] sm:w-auto  xl:right-[60%] right-[40%] "
+          className="absolute xsm:w-[15rem] xsm:bottom-[-15rem] 2xl:bottom-[-30rem] xl:bottom-[-20rem] sm:w-auto  xl:right-[60%] right-[40%] "
           variants={imageVariants}
         />
       </motion.div>

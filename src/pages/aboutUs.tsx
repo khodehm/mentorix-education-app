@@ -4,10 +4,8 @@ import pic2 from "../assets/image/undraw_educator_6dgp.svg";
 import { useLocation } from "react-router-dom";
 
 const About = () => {
-    const location =useLocation()   
-    const isActive =Boolean(location.pathname === "/about") 
-    
-    
+    const location = useLocation()   
+    const isActive = Boolean(location.pathname === "/about")   
     return (
         <>
         <section className="relative flex text-center px-4 my-8  flex-col h-full ">
